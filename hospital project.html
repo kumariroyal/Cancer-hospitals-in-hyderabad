@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyderabad Cancer Hospitals</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.search-box{
+    text-align:center;
+    margin:25px;
+}
+
+.search-box input{
+    width:60%;
+    padding:12px;
+    border:2px solid #0077b6;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h2{
+    color:#0077b6;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    margin-bottom:8px;
+}
+
+.rating{
+    color:green;
+    font-weight:bold;
+}
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Top Cancer Hospitals in Hyderabad</h1>
+    <p>Search Best Cancer Treatment Hospitals</p>
+</header>
+
+<div class="search-box">
+    <input type="text" id="searchInput"
+    placeholder="Search hospital name..."
+    onkeyup="searchHospital()">
+</div>
+
+<div class="container">
+
+<!-- 30 Hospital Cards -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3">
+<div class="card-content">
+<h2>Basavatarakam Indo American Cancer Hospital</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.9/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d">
+<div class="card-content">
+<h2>Omega Cancer Hospital</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.8/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118">
+<div class="card-content">
+<h2>American Oncology Institute</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.7/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc">
+<div class="card-content">
+<h2>Apollo Cancer Hospital</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.8/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907">
+<div class="card-content">
+<h2>Yashoda Cancer Institute</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.7/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb">
+<div class="card-content">
+<h2>KIMS Cancer Center</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.6/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514">
+<div class="card-content">
+<h2>CARE Cancer Institute</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.6/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580281657527-47f249e8f4df">
+<div class="card-content">
+<h2>AIG Hospitals Cancer Center</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.7/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528">
+<div class="card-content">
+<h2>MNJ Cancer Hospital</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.5/5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+<div class="card-content">
+<h2>Sunshine Cancer Hospital</h2>
+<p>Location: Hyderabad</p>
+<p class="rating">⭐ 4.5/5</p>
+</div>
+</div>
+
+<!-- Remaining Hospital Names -->
+
+<div class="card"><div class="card-content"><h2>Continental Hospitals Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Citizens Specialty Hospital Oncology</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Star Hospitals Cancer Care</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Medicover Cancer Institute</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Virinchi Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Gleneagles Global Cancer Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Asian Institute of Oncology</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Udai Omni Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Renova Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Prathima Cancer Institute</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>LV Prasad Oncology Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Hope Oncology Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Rainbow Cancer Institute</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Trident Cancer Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Neo Cancer Care</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Sai Vani Cancer Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Lotus Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>LifeSpring Oncology Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Prime Cancer Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Onco Life Cancer Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>HealthCare Cancer Institute</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Cure Cancer Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Elite Oncology Hospital</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Advanced Cancer Care Center</h2><p>Hyderabad</p></div></div>
+
+<div class="card"><div class="card-content"><h2>Royal Cancer Institute</h2><p>Hyderabad</p></div></div>
+
+</div>
+
+<footer>
+<p>© 2026 Hyderabad Cancer Hospitals Finder</p>
+</footer>
+
+<script>
+
+function searchHospital(){
+
+let input = document.getElementById("searchInput").value.toLowerCase();
+
+let cards = document.getElementsByClassName("card");
+
+for(let i=0; i<cards.length; i++){
+
+let hospitalName = cards[i].getElementsByTagName("h2")[0];
+
+if(hospitalName.innerHTML.toLowerCase().includes(input)){
+cards[i].style.display = "block";
+}
+else{
+cards[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
